@@ -1,0 +1,9 @@
+<h1>Bienvenu sur notre site</h1>
+<p>Bienvenue sur ma page d'accueil ⛵️🎓😇</p>
+<p><a href="<%= user_path %>">Créer un nouvel utilisateur</a></p>
+
+
+<p>Liste des utilisateurs</p>
+<% @users.each do |user| %>
+<p><a href="/user/<%= user.name %>">nom : <%= user.name + ", bio : " + user.bio %></a></p>
+<% end %>

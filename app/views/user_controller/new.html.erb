@@ -1,0 +1,16 @@
+<h1>Créer un nouvel utilisateur</h1>
+
+<p>
+<form action= "/user" method="POST">
+  <p>Nom
+  <input type="text" name="name">
+</p>
+  <p>Bio
+  <textarea type="text" name="bio" rows=5 cols=120></textarea>
+</p>
+  <input type="submit" value="Ajouter un utilisateur">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
+
+
